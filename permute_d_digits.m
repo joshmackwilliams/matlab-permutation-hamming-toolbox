@@ -4,10 +4,11 @@ function permutations = permute_d_digits(permutation, d)
 %   but d digits will be out of place. Depends on derangements() to
 %   calculate derangements.
 %   TODO: Optimize this function. 
+%   EDIT 10/12/2019: Fixed a bug related to refactoring
 
 n = length(permutation);
 digitcombos = nchoosek(1:n, d);
-permutations = repmat(permutation, nchoosek(n, d) * countderangements(d), 1);
+permutations = repmat(permutation, nchoosek(n, d) * count_derangements(d), 1);
 dderangements = derangements(d);
 
 x = 1;
