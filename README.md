@@ -1,14 +1,16 @@
 # matlab-permutation-hamming-toolbox
-Tools for working with permutation arrays and permutation hamming distance in MATLAB. 
-# Background Information
-For information on this problem, see this research paper https://utd-ir.tdl.org/handle/10735.1/5488. This is just one of many research papers on this subject. 
-# Conventions
+Tools for working with permutation arrays and permutation hamming distance in MATLAB.
+
+For information on this problem, see this research paper https://utd-ir.tdl.org/handle/10735.1/5488, one of many research papers on this subject. 
+
+## Conventions
 Certain conventions are used by all functions in this toolbox: 
 1. The length of a permutation is usually denoted by the letter n
 2. The hamming distance between two permutations is usually denoted by the letter d
 3. Individual permutations are represented by a vector with one row and n columns
 4. A set of permutations of length L is represented by a matrix with L rows and n columns, where each row is a permutation in the set
-# Function List
+
+## Function List
 Documentation is provided with the functions themselves, but summaries are also listed here for convenience: 
 * compose_perms(p0, p1) - Permute one permutation by another
 * compute_hd_between(p0, p1) - Returns the integer hamming distance between p0 and p1
